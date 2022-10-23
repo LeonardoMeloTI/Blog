@@ -28,7 +28,7 @@ export default function Form() {
             <label htmlFor='email'>E-mail:</label>
             <input id='email' type="email" name="user_email" placeholder='exemplo@gmail.com'/>
             <label htmlFor='questions'>Assunto:</label>
-            <textarea id="questions" name="message" cols="30" rows="5" placeholder='Assunto a ser trato!'/>
+            <textarea id="questions" name="message" cols="30" rows="5" placeholder='Assunto a ser tratado!'/>
             <input type="submit" value="Enviar" />
         </S.Form>
         </>

@@ -5,8 +5,9 @@ const Home = () => {
       return (
         <>
         <S.Container>
-        <S.Section/>
+        <S.Section>
         <S.H1>Leonardo Melo</S.H1>
+        </S.Section>
         </S.Container>
         </>
       );

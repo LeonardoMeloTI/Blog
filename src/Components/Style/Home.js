@@ -6,34 +6,75 @@ export const Container = styled.div`
 width:100%;
 heigth:auto;
 display:flex;
-justify-content: space-evenly;
+justify-content:flex-end;
 margin-top:63px;
 `;
 
 export const Section = styled.section`
   background-image: url(${Person});
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-left:2px;
+   max-width: 320px;
+  background-size:contain;
   margin-top:80px;
   margin-bottom:30px;
-  justify-content:flex-end;
+  margin-right:480px;
   align-items: center;
-  width: 360px;
 	height: 430px;
-	border-radius: 30%;
+	border-radius: 20%;
+  
+@media screen and (max-width:580px){
+  display:flex;
+  flex-direction:column;
+  width:180px;
+  font-size:2.5rem;
+  margin-top:90px;
+  margin-right:290px;
+  }
 `;
 
 export const H1 = styled.h1`
-display:flex;
-font-family:
-width:30px;
+display:inline-block;
+width:320px;
 height:80px;
-margin-left:600px;
+margin-left:320px;
+margin-right:10px;
 margin-top:100px;
 font-family:'Roboto', sans-serif;
 font-weight:900;
-font-size:4rem;
+font-size:3.0rem;
+color: #3c3ccc;
+
+@media screen and (max-width:580px){
+  display:flex;
+  flex-direction:column;
+  width:260px;
+  font-size:2.5rem;
+  margin-top:260px;
+  margin-right:240px;
+  }
+
+::after {
+  display:flex;
+  width:480px;
+  margin-top:30px;
+  position:relative;
+  content: "Desenvolvedor Front-End";
+  color: #ffa500;
+  border-color: black;
+  font-size:2.4rem;
+  @media screen and (max-width:560px){
+    display:inline-block;
+    width:400px;
+    margin-top:10px;
+    position:relative;
+    content: "Desenvolvedor Front-End";
+    color: #ffa500;
+    border-color: black;
+    font-size:2.3rem
+
+    }
+  
+}
 `;
 
 

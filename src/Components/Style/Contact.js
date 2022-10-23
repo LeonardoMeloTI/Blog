@@ -10,7 +10,7 @@ margin-left:600px;
 margin-top:67px;
 
 @media (max-width:960px) {
-    margin:67px 440px;
+    margin:67px 480px;
     width:240px;
     }
 @media (max-width:860px) {
