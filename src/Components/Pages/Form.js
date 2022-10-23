@@ -9,12 +9,13 @@ export default function Form() {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_544so5q', 'template_wnpqrzk', 
+      emailjs.sendForm('service_e62zmgr', 'template_wnpqrzk', 
                         form.current, 'x6wLsUgh9SHXBdIUv')
 
         .then((result) => {
             console.log(result.text);
             e.target.reset()
+            console.log("mensagem enviada")
         }, (error) => {
             console.log(error.text);
         });
